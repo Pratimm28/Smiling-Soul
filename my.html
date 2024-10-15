@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side navigation bar</title>
+  <link rel="stylesheet" href="my.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet"
+    href='https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,700&family=Roboto+Slab:wght@200&display=swap'>
+    <style>
+      .fa {
+        color: rgb(120, 176, 225);
+      }
+  
+      .menu-item {
+        color: rgb(120, 176, 225);
+      }
+  
+      .menu {
+        color: rgb(120, 176, 225);
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="image"></div>
+    <div class="main-menu">
+      <div class="menu">Menu</div>
+      <ul>
+        
+        
+        <li class="menu-item"><i class="fa fa-home"></i><a href="#home">Home</a></li>
+        <li class="menu-item"><i class="fa fa-commenting-o "></i><a href="#about">Activities</a></li>
+        <li class="menu-item"><i class="fa fa-child"></i><a href="#councellors">Blog & Consultancy</a></li>
+        <li class="menu-item"><i class="fa fa-phone"></i><a href="#contact">Contact Us</a></li>
+        <img src="fake.jpg" class="logo">
+      </ul>
+    </div>
+    
+    <div class="home" id="home">
+      
+      <div class="max-width">
+        <div class="dukhh">
+          <img class="dukhh" src="Picture3.png" width="120" height="100">
+        </div>
+        
+        <div class="meme-2">
+          <img class="meme-2" src="Picture2.png" width="120" height="100">
+        </div>
+        <br>
+
+        <div class="home-content">
+          
+          <h1 class="head">GIGGLES AND GROWTH</h1>
+
+        </div>
+        <div class="meme">
+          <img class="meme" src="meme.jpg" width="120" height="100">
+        </div>
+        <div class="jagg">
+          <img class="jagg" src="jag suna.jpg" width="120" height="100">
+        </div>
+      </div>
+    </div>
+    <title>TEST ME</title>
+  </head>
+  <body>
+  
+   <!-----About Me----->
+   <div class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <br><br><br><img class="img-2" src="about.jpg" class="imgx" width="120" height="445" >
+            </div>
+            <div class="about-col-2">
+                <br><br><br><br><h1 class="sub-title">Activities</h1><br>
+
+                <p class="ptag">Mental health refers to our emotional, psychological, and social well-being. It affects how we think, feel, and behave, and influences our ability to cope with stress, form relationships, and make decisions.<br> Taking care of mental health involves seeking help when needed, practicing self-care, and reducing stigma surrounding mental health issues.<br><br>Knowing the importance of mental health and well being in todays world, we have a small activity to analyse your mental health.
+                <br><br>
+
+                  <button class="my-button" onclick="window.location.href='https://forms.gle/NC4Y7gzzX1yqLy8L8'">Start Here</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--councellors-->
+<div id="councellors">
+  <h1 class="sub-title">Meet Our Councellors</h1>
+  <div class = "Councellor-list">
+    <div class="counc">
+      <h2>Mr. Partha Pratim</h2><br>
+      <p>Mr partha pratim's expertise and knowledge in the field were evident throughout our sessions. They provided a safe and supportive environment, actively listened to my concerns, and offered valuable insights and practical strategies for managing my mental health.</p>
+      <br>
+      <a class="book" href="https://calendly.com/parthakhamari28"> Book Appointment </a>
+    </div>
+    <div class="counc">
+      <h2>Mrs. Priyanka Panigrahi</h2><br>
+      <p> Mrs. Priyanka Panigrahi's compassionate and empathetic approach made a significant impact on my well-being.They provided a safe and supportive environment, actively listened to my concerns, and offered valuable insights and practical strategies for managing my mental health. </p>
+      <br><a class="book" href="https://calendly.com/parthaofficial28"> Book Appointment </a>
+    </div>
+    <div class="counc">
+      <h2>Mrs Purnima</h2><br>
+      <p> Mrs Purnima's deep understanding of mental health issues, empathetic approach, and exceptional listening skills created a safe and supportive environment. They provided invaluable guidance, practical strategies, and customized solutions that greatly improved my well-being</p>
+      <br><a class="book" href="https://calendly.com/parthakhamari28"> Book Appointment </a>
+    </div>
+
+  </div>
+
+</div>
+  <!---contact-->
+  <br><br>  <br><h1 class="sub-title">Reach Out To Us</h1>
+  <div id="contact">
+    <div id="container">
+      <div class="row">
+        <div class="contact-left">
+          <br><br><br><br>
+          <p>Email : gigglesandgrowth@gmail.com</p>
+          <p>Contact No : 7303555341</p>
+
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+
+
+    function opentab(tabname) {
+      var tablinks = document.getElementsByClassName("tab-links")
+      var tabcontents = document.getElementsByClassName("tab-contents")
+      var switch_table = document.getElementById(tabname)
+      console.log(switch_table)
+
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      switch_table.classList.add("active-tab")
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwhGPbjHFf03OlU6-qTiUpLyjmQhK7ace6o1WUyZXNKm3LwHi_ZmoIKGXB5NVaV0huAQA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
+
+<script>
+  fetch('https://docs.google.com/spreadsheets/d/1xtJOUXB6GNzvo8hJysO0k-M1xupsopV6-wIw-Pxda0s/edit?resourcekey#gid=390666909', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+    // Add any other headers required by the API
+  },
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Error: ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    // Handle the retrieved data
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error('Error:', error);
+  });
+
+</script>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paint.io</title>
+    <link rel="icon" type="image/x-icon" href="./paint-icon.png">
+
+    <link rel="stylesheet" href="draw.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="navbar">
+                <input type="checkbox" name="" id="check">
+                <label for="check" class="checkbtn">
+                    <img src="./images/bars-solid.svg" width="30" height="30" alt="">
+                </label>
+
+
+
+
+
+                <ul>
+                    <li>
+                        <label for="pen" id="penl">&nbsp;Pen</label>
+                        <select id="pen" onchange=" s_pen(value) ">
+                            <option selected class="opt" value="1"> pen 1</option>
+                            <option class="opt" value="2"> pen 2</option>
+                            <option class="opt" value="3"> pen 3</option>
+                            <option class="opt" value="4"> pen 4</option>
+                            <option class="opt" value="5"> pen 5</option>
+                            <option class="opt" value="6"> pen 6</option>
+                            <option class="opt" value="7"> pen 7</option>
+                            <option class="opt" value="8"> pen 8</option>
+                        </select>
+
+                    </li>
+                    <li>
+                        <label for="color" id="colorl">&nbsp;Color</label>
+                        <select id="color" onchange=" s_color(value) ">
+                            <option class="opt" value="1">black </option>
+                            <option class="opt" value="2">red</option>
+                            <option class="opt" value="3">blue</option>
+                            <option class="opt" value="4">green</option>
+                            <option class="opt" value="5">pink</option>
+                            <option class="opt" value="6">grey</option>
+                            <option class="opt" value="7">Olive</option>
+                            <option class="opt" value="8">Orange</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="Bcolor" id="b_color">&nbsp;b_Color</label>
+                        <select id="Bcolor" onchange="b_color(value) ">
+                            <option selected class="opt" value="0"> Transparent</option>
+                            <option class="opt" value="1">white </option>
+                            <option class="opt" value="2">red</option>
+                            <option class="opt" value="3">blue</option>
+                            <option class="opt" value="4">green</option>
+                            <option class="opt" value="5">pink</option>
+                            <option class="opt" value="6">grey</option>
+                            <option class="opt" value="7">Olive</option>
+                            <option class="opt" value="8">Orange</option>
+                            <option class="opt" value="9">black </option>
+                        </select>
+                    </li>
+                    <li><button class="btn" id="Eraser" onclick="Er()">&nbsp;Eraser</button></li>
+                    <li><button class="btn" id="Eraser" onclick="Clear_all()"> &nbsp;Clear all</button></li>
+                    <li><button class="btn " onclick="toImg()">Download</button></li>
+                </ul>
+            </div>
+            
+        </nav><br>
+
+
+        <div id="main-content">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="footer"> 
+            
+            <br>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+<script src="draw.js"></script>
+
+</html>

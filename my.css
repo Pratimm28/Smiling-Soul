@@ -1,0 +1,349 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  .containter {
+    padding: 10px 10%;
+  }
+  /*side bar*/
+  body {
+    background-color: rgb(21,16,25);
+    font-family: 'Fira Sans',sans-serif;
+    color: #d4d4d4;
+    font-size: 20px;
+  }
+  
+  .main-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100vh;
+    background-color: rgb(21,16,25);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 0px 20px #d4d4d4;
+    transition: .3s ease;
+  }
+  
+  .main-menu:hover{
+    width: 250px;
+  }
+    
+  
+  
+  
+  .main-menu .menu-item{
+    padding: 10px;
+  }
+  .main-menu .menu-item:hover{
+    background-color: #d6d6d6;
+    cursor: pointer;
+  }
+  .main-menu .menu-item a{
+    color:rgb(120, 176, 225) ;
+  }
+  
+  .main-menu .menu-item .fa{
+    font-size: 25px;
+    width: 40px;
+    padding: 10px;
+  }
+  
+  
+  .main-menu .menu{
+     padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: expanded;
+  }
+  .logo{
+    height: 130px;
+    padding-top: 400px;
+    
+  }
+  
+  /* First page content */
+  .home{
+    
+    background: url("bg3.png") no-repeat center;
+    height: 100vh;
+    
+    color: aliceblue;
+    min-height: 500px;
+    
+  }
+  .home .max-width{
+    margin: 70px;
+    
+  }
+  .home .home-content .head{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+  }
+  
+  
+  .home .max-width .dukhh{
+    
+    top: 50px;
+    left: 70px;
+    
+    padding:10px ; 
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    
+    
+  }
+  .home .max-width .meme{
+    
+    top: 50px;
+    left: 70px;
+    padding:10px ; 
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    
+    
+  }
+  .home .max-width .meme-2{
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    padding:10px ; 
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+   
+  }
+  
+  .home .max-width .jagg{
+    position: absolute;
+    top: 235px;
+    right: 30px;
+    padding:10px ; 
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+  }
+  
+  
+  
+  
+  /*second page*/
+  #about{
+    padding: 100px 10px;
+    color: #ababab;
+    
+  }
+  .imgx{
+    padding:100px ; 
+    margin: 60px;
+    width: 100px;
+    align-items: center;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-col-1{
+    flex-basis: 40%;
+    margin: 60px;
+    
+  }
+  .about-col-1 img{
+    width: 60%;
+    border-radius: 15px;
+    margin-left: 85px;
+  }
+  .about-col-2{
+    flex-basis: 50%;
+    padding: 0 10px;
+  }
+  .sub-title{
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(120, 176, 225);
+  }
+  .ptag{
+    font-size: 25px;
+  }
+  .tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+  }
+  .tab-links{
+    margin-right: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+  .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(120, 176, 225);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+  .tab-links.active-link::after{
+    width: 50%;
+  }
+  .tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .tab-contents ul li span{
+    color: rgb(120, 176, 225);
+    font-size: 26px;
+    white-space: break-spaces;
+  }
+  .tab-contents{
+    display: none;
+  }
+  .tab-contents.active-tab{
+    display: block;
+  }
+  /*google form button*/
+  .my-button {
+    /* Define button styles */
+    padding: 10px 20px;
+    background-color:rgb(120, 176, 225)  ;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #d4d4d4;
+  }
+  /*
+  .my-button:hover {
+    /* Define button styles on hover 
+    
+  }
+  
+  .my-button:active {
+    /* Define button styles on click 
+    
+  }
+  */
+  .my-button{
+    align-items:center;
+  }
+  
+  /*services*/
+  #councellors{
+    padding: 70px 100px;
+  
+  }
+  .sub-title{
+    text-align: center;
+    padding: 0px , 100px;
+  }
+  .counc{
+    
+    padding: 30px;
+    width: 250px;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 325px;
+    box-shadow: 0 0 10px white;
+  }
+  .Councellor-list{
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+   
+  }
+  .counc .book{
+    text-align: center;
+    padding: 10px;
+  }
+  
+  
+  /*contact me*/
+  .sub-title{
+    padding: 50px,100px;
+  }
+  .contact-left{
+    flex-basis: 30%; 
+    padding: 20px;
+    margin-left: 75px;
+  }
+  .contact-right{
+    flex-basis: 60%;
+    margin-top: 110px;
+    margin-left: 30px;
+  }
+  
+  .contact-left p{
+    margin-top: 20px;
+    padding: 10px;
+    margin: 20px;
+  }
+  .Councellor-list.book:hover{
+    background-color: #d6d6d6;
+    cursor: pointer;
+  }
+  
+  
+  
+  .btn{
+    display: block;
+    margin: 200px auto ;
+    width: fit-content;
+    border-radius: 1px solid rgb(120, 176, 225);
+    padding: 24px 50px;
+    border-radius: 6px;
+  }
+  
+  .btn.btn2{
+    display: inline-block;
+    background: rgb(120, 176, 225) ;
+  } 
+  .contact-right form{
+    width: 100%
+  }
+  
+  form input, form textarea{
+    width: 78%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 25px;
+    margin: 15px 0;
+    color:#fff ;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  #msg{
+    color: rgb(120, 176, 225) ;
+    margin-top: -150px;
+    display: block;
+  }
+  
+  

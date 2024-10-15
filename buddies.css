@@ -1,0 +1,57 @@
+.buddies-section {
+  padding-top: 8rem;
+  display: block;
+}
+
+.buddies-section h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.profile-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 4rem 2rem;
+}
+
+.profile-card {
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  background: url(/images/images.jpg);
+  background-position: top;
+  flex-direction: column;
+  width: 16rem;
+  box-shadow: 1px 1px 14px -1px #627ff8;
+}
+
+.profile-card img {
+  scale: 0.9;
+  margin-top: -1rem;
+}
+
+.desc {
+  text-align: center;
+  margin: 0.5rem;
+  margin-top: -0.5rem;
+  background: linear-gradient(45deg, #78f1e485, #bd98fe);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid blue;
+  /* box-shadow: 0px 0px 17px -4px #f56cf5; */
+}
+
+.desc a {
+  margin: 0.5rem auto;
+}
+
+.name {
+  color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: var(--my_gradient2);
+  background-clip: text;
+  -webkit-background-clip: text;
+}

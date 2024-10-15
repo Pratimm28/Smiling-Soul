@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alma chat App</title>
+    <link rel="stylesheet" href="chat.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"
+    ></script>
+    <script defer src="chat.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Smiling Soul Chat Room</h1>
+    </header>
+    <div class="chat-container">
+    <form class="modal">
+        <h1>Welcome</h1>
+        <input placeholder="What's ur name.." type="text" />
+        <button type="submit">Submit</button>
+        <input
+          class="password disappear"
+          placeholder="Surprise.. 😁😁"
+          type="password"
+        />
+      </form>
+      <div class="msg join-msg disappear"><p>You joined the chat</p></div>
+    </div>
+    <div class="send-container">
+      <form action="#" id="send-container">
+        <input
+          type="text"
+          name="messageInp"
+          id="messageInp"
+          placeholder="Write here.."
+        />
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
